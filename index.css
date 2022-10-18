@@ -11,45 +11,51 @@ body {
     background-color: #F1F1F3;
 }
 main {
-    padding-inline: 10em;
-    padding-block: 5em;
+    padding-inline: 10vw;
+    padding-block: 5vh;
 }
 
 /* NAV */
 
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #F1F1F3;
+    z-index: 9999;
+}
 nav {
+    background-color: #F1F1F3;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #F1F1F3;
-    max-width: 100%;
-    min-height: auto;
-    padding-top: 5em;
-    padding-inline: 10em;
-    transition: 0.4s;
+    height: 10vh;
+    padding-block: 2vh;
+    padding-inline: 10vw;
 }
-nav > a >.name_tag {
-    justify-content: flex-start;
+nav > a > .logo {
+    float: flex-start;
     font-family: 'Gopher';
     color: #1E1E1E;
     font-size: 24px;
-    font-weight:400;
+    font-weight: 400;
 }
-nav > a >.name_tag:hover {
+nav > a > .logo:hover {
     opacity: 75%;
 }
 nav > a {
     text-decoration: none;
 }
+
 nav > .nav_links {
-    justify-content: flex-end;
+    float: flex-end;
     list-style: none;
     font-family: 'Albert Sans';
     color: #1E1E1E;
     display: flex;
     flex-direction: row;
-    column-gap: 3em;
+    column-gap: 3vw;
 }
 nav > ul > a {
     text-decoration: none;
@@ -64,3 +70,258 @@ nav > ul > a:hover {
 nav > a > .hamburger_menu  {
     display: none;
 }
+
+/* INTRO SECTION */
+
+.intro_section {
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Albert Sans';
+    background-color: none;
+    padding-block: 25vh 15vh;
+}
+.intro_section > div > img {
+    max-width: 15vw;
+    height: auto;
+    border-radius: 100%;
+    margin-bottom: 2vh;
+}
+.intro_section > div > h1 {
+    font-family: 'Albert Sans';
+    font-weight: 300;
+    font-size: 35px;
+    width: 100%;
+    color: #1E1E1E;
+    text-align: center;
+}
+.intro_section > div > h2 {
+    font-family: 'Albert Sans';
+    font-weight: 300;
+    padding-block: 0.3vh;
+    font-size: 18px;
+}
+.intro_section > div > h3 {
+    font-weight: 300;
+    font-size: 18px;
+    color: #1E1E1E;
+    opacity: 50%;
+    padding-block: 0.3vh;
+}
+.intro_section > .logo_cards {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2vw;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vh;
+}
+.logo_cards > img {
+    max-height: 8vh;
+    max-width: auto;
+    opacity: 25%;
+    filter: grayscale(100%);
+    border-radius: none;
+}
+
+/* PROJECT PREVIEW SECTION */
+
+.flex-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;    
+    column-gap: 5%;
+    justify-content: space-between;
+    width: 100%;
+    height: 1fr;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.hero_wrapper {
+    overflow: hidden;
+    border-radius: 8px;
+    width: 2fr;
+    height: 1fr;
+    margin-bottom: 5%;
+}
+.hero {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    border-radius: 8px;
+    transition: transform 1s, filter 800ms ease-in-out;
+}
+.hero:hover {
+    filter:opacity(90%);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.projects_hero {
+    font-family: 'Albert Sans';
+    align-items: center;
+    padding-bottom: 5em;
+}
+.projects_hero > h2 {
+    font-family: 'Gopher';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1E1E1E;
+    
+}
+.projects_hero > h3 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1E1E1E;
+    opacity: 50%;
+}
+.button_container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    border: none;
+    transition: transform 1s, filter 500ms ease-in-out;
+}
+button:hover{
+    opacity: 75%;
+}
+button > a {
+    display: flex;
+    flex-direction: row;
+    background-color: #F1F1F3;
+    border: none;
+    border-radius: 8px;
+    padding-block: 1em;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+}
+.see_more > a > .arrow {
+    max-width: 20px;
+}
+.see_more > a > p {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Albert Sans';
+    color: #1E1E1E;
+    text-decoration: none;
+}
+
+@media (max-width:1024px) {
+
+    main {
+    padding-inline: 5vw;
+    padding-block: 1vh
+}
+    nav {
+    padding-inline: 5vw;
+}
+}
+@media (max-width:768px) {
+main {
+    padding-inline: 5vw;
+    padding-block: 1vh;
+}
+nav {
+    padding-inline: 5vw;
+}
+nav > .nav_links {
+    display: none;
+}
+nav > a > .hamburger_menu {
+    display: flex;
+    max-height: 20px;
+    cursor: pointer;
+}
+.flex-grid {
+    display: grid;
+    grid-template-columns: 2fr;    
+    column-gap: 5%;
+    justify-content:center;
+    width: 100%;
+    height: 1fr;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.flex-grid {
+    display: grid;
+    grid-template-columns: 2fr;    
+    column-gap: 5%;
+    justify-content:center;
+    width: 100%;
+    height: 1fr;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+}
+        
+@media (max-width:425px) {
+        
+main {
+    padding-inline: 2vw;
+    padding-block: 0.5vh;
+}
+nav {
+    padding-inline: 5vw;
+    padding-block: 0.5vh;
+}
+.flex-grid {
+    display: grid;
+    grid-template-columns: 2fr;    
+    column-gap: 5%;
+    justify-content:center;
+    width: 100%;
+    height: 1fr;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.projects_hero {
+    font-family: 'Albert Sans';
+    align-items: center;
+    padding-bottom: 1vh;
+}
+.projects_hero > h2 {
+    font-family: 'Gopher';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1E1E1E;
+}
+.projects_hero > h3 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1E1E1E;
+    opacity: 50%;
+}
+.copyright {
+    padding-inline: 5vw;
+    padding-bottom: 0.5vh;
+    background-color: #cfcfcf;
+    font-family: 'Albert Sans';
+    font-size: 14px;
+}
+}
+@media (max-width: 320px) {
+            
+main {
+    padding-inline: 5vw;
+    padding-block: 0.5vh;
+}
+    nav {
+    padding-inline: 2vw;
+    padding-block: 0.5vh;
+}
+}
+        
