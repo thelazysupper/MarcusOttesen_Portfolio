@@ -253,17 +253,7 @@ nav > a > .hamburger_menu {
 .flex-grid {
     display: grid;
     grid-template-columns: 2fr;    
-    column-gap: 5%;
-    justify-content:center;
-    width: 100%;
-    height: 1fr;
-    flex-wrap: wrap;
-    overflow: hidden;
-}
-.flex-grid {
-    display: grid;
-    grid-template-columns: 2fr;    
-    column-gap: 5%;
+    column-gap: 10vh;
     justify-content:center;
     width: 100%;
     height: 1fr;
