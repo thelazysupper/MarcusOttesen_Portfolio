@@ -275,7 +275,7 @@ nav {
 .flex-grid {
     display: grid;
     grid-template-columns: 2fr;    
-    column-gap: 5%;
+    column-gap: 10vh;
     justify-content:center;
     width: 100%;
     height: 1fr;
