@@ -265,7 +265,7 @@ nav > a > .hamburger_menu {
 @media (max-width:425px) {
         
 main {
-    padding-inline: 2vw;
+    padding-inline: 5vw;
     padding-block: 0.5vh;
 }
 nav {
