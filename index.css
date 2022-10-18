@@ -117,20 +117,19 @@ main {
     padding-block: 0.3em;
 }
 .intro_section > .logo_cards {
-    display: grid;
-    grid-template-columns: 15vw 15vw 15vw;
-    row-gap: 5vw;
+    display: flex;
+    flex-direction: row; 
+    column-gap: 5vw;  
     width: 100%;
     align-items: center;
     justify-content: center;
-    margin-block: 10vh 20vw;
+    margin-block: 20vh;
 }
 .logo_cards > img {
-    max-height: 5vw;
+    max-height: 10vw;
     max-width: auto;
     opacity: 25%;
     filter: grayscale(100%);
-    border-radius: none;
 }
 .seperator {
     height: 1px;
@@ -315,15 +314,6 @@ main {
 }
 nav {
     padding: 3vh 5vw;
-}
-.intro_section > .logo_cards {
-    display: grid;
-    grid-template-columns: 15vw 15vw 15vw;
-    row-gap: 5vw;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin-block: 10vh 10%;
 }
 .flex-grid {
     display: grid;
