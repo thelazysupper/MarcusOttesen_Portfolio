@@ -1,0 +1,72 @@
+@import url('https://use.typekit.net/xxc2poh.css');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://use.typekit.net/xxc2poh.css");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    background-color: #F1F1F3;
+}
+main {
+    padding-inline: 10vw;
+    padding-block: 5vh;
+}
+
+/* NAV */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #F1F1F3;
+    z-index: 9999;
+}
+nav {
+    background-color: #F1F1F3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding-block: 2vh;
+    padding-inline: 10vw;
+}
+nav > a > .logo {
+    float: flex-start;
+    font-family: 'Gopher';
+    color: #1E1E1E;
+    font-size: 24px;
+    font-weight: 400;
+}
+nav > a > .logo:hover {
+    opacity: 75%;
+}
+nav > a {
+    text-decoration: none;
+}
+
+nav > .nav_links {
+    float: flex-end;
+    list-style: none;
+    font-family: 'Albert Sans';
+    color: #1E1E1E;
+    display: flex;
+    flex-direction: row;
+    column-gap: 3vw;
+}
+nav > ul > a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #1E1E1E;
+    opacity: 50%;
+    transition: 5ms;
+}
+nav > ul > a:hover {
+    opacity: 100%;
+}
+nav > a > .hamburger_menu  {
+    display: none;
+}
