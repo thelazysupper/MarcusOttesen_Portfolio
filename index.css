@@ -80,7 +80,6 @@ nav > a > .hamburger_menu  {
     align-items: center;
     text-align: center;
     font-family: 'Albert Sans';
-    background-color: none;
     padding-block: 25vh 15vh;
 }
 .intro_section > div > img {
@@ -153,6 +152,7 @@ nav > a > .hamburger_menu  {
     justify-content: center;
     border-radius: 8px;
     transition: transform 1s, filter 800ms ease-in-out;
+    scale:(1);
 }
 .hero:hover {
     filter:opacity(90%);
@@ -216,6 +216,23 @@ a {
     font-family: 'Albert Sans';
     color: #1E1E1E;
     text-decoration: none;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 5vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-block: 5em;
+    padding-inline: 10em;
+    background-color: #cfcfcf;
+    font-family: 'Albert Sans';
+    font-size: 16px;
+    font-weight: 300;
+    color: #1E1E1E;
+    line-height: 40px;
 }
 
 @media (max-width:1024px) {
