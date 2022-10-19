@@ -14,7 +14,35 @@ main {
     padding-inline: 10vw;
     padding-block: 5vh;
 }
-
+button {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1vw;
+    padding: 15px 25px;
+    font-family: 'Albert Sans';
+    font-weight: 400;
+    font-size: 20px;
+    background-color: #D9D9D9;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 200ms, filter 200ms ease-in-out;
+}
+button > .white {
+    display: none;
+}
+button:hover {
+    background-color: #1E1E1E;
+    color: #EAEAEA;
+}
+button:hover > .black {
+    display: none;
+}
+button:hover > .white {
+    display: inline;
+}
 /* NAV */
 
 header {
@@ -178,31 +206,6 @@ nav > a > .hamburger_menu  {
     line-height: 25px;
     color: #1E1E1E;
     opacity: 50%;
-}
-.button_container {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-button {
-    border: none;
-    transition: transform 1s, filter 500ms ease-in-out;
-}
-button:hover{
-    opacity: 75%;
-}
-button > a {
-    display: flex;
-    flex-direction: row;
-    background-color: #F1F1F3;
-    border: none;
-    border-radius: 8px;
-    padding-block: 1em;
-    justify-content: center;
-    align-items: center;
-    column-gap: 10px;
-    cursor: pointer;
-    width: 100%;
 }
 a {
     text-decoration: none;
