@@ -380,11 +380,11 @@ nav > a > .hamburger_menu {
         
 main {
     padding-inline: 5vw;
-    padding-block: 0.5vh;
+    padding-block: 5vh;
 }
 nav {
     padding-inline: 5vw;
-    padding-block: 2vh;
+    padding-block: 5vh;
 }
 .flex-grid {
     display: grid;
@@ -416,8 +416,6 @@ nav {
     opacity: 50%;
 }
 .copyright {
-    padding-inline: 5vw;
-    padding-bottom: 0.5vh;
     background-color: #cfcfcf;
     font-family: 'Albert Sans';
     font-size: 14px;
@@ -427,11 +425,11 @@ nav {
             
 main {
     padding-inline: 5vw;
-    padding-block: 0.5vh;
+    padding-block: 5vh;
 }
     nav {
     padding-inline: 2vw;
-    padding-block: 0.5vh;
+    padding-block: 5vh;
 }
 }
 }
