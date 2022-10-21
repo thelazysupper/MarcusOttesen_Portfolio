@@ -8,7 +8,7 @@
 }
 body {
     width: 100%;
-    background-color: #F1F1F3;
+    background-color: #;
 }
 main {
     transition-delay: 500ms;
@@ -66,16 +66,16 @@ button:hover > .white {
     font-family: 'Albert Sans';
     font-weight: 600;
     font-size: 16px;
-    color: #1E1E1E;
+    color: white;
     opacity: 50%;
 }
 .undertitle {
     font-size: 20px;
-    color: #1E1E1E;
+    color: white;
     line-height: 30px;
 }
 strong {
-    color: #838A83;
+    color: white;
 }
 
 
@@ -85,11 +85,11 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: #F1F1F3;
+    background-color: #1E1E1E;
     z-index: 9999;
 }
 nav {
-    background-color: #F1F1F3;
+    background-color: #1E1E1E;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -101,7 +101,7 @@ nav {
 nav > a > .logo {
     float: flex-start;
     font-family: 'Gopher';
-    color: #1E1E1E;
+    color: white;
     font-size: 24px;
     font-weight: 400;
 }
@@ -116,7 +116,7 @@ nav > .nav_links {
     float: flex-end;
     list-style: none;
     font-family: 'Albert Sans';
-    color: #1E1E1E;
+    color: white;
     display: flex;
     flex-direction: row;
     column-gap: 3vw;
@@ -124,7 +124,7 @@ nav > .nav_links {
 nav > ul > a {
     text-decoration: none;
     font-size: 20px;
-    color: #1E1E1E;
+    color: white;
     opacity: 50%;
     transition: 5ms;
 }
