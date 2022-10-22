@@ -14,7 +14,24 @@ main {
     padding-inline: 10vw;
     padding-block: 5vh;
 }
-
+button {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1vw;
+    padding: 15px 25px;
+    font-family: 'Albert Sans';
+    font-weight: 400;
+    font-size: 18px;
+    background-color: #D9D9D9;
+    color: #1E1E1E;
+    text-decoration: none;
+    border: none;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
 /* NAV */
 
 header {
@@ -70,3 +87,7 @@ nav > ul > a:hover {
 nav > a > .hamburger_menu  {
     display: none;
 }
+
+
+/* CONTACT SECTION */
+
