@@ -27,22 +27,27 @@
 </header>
 
 <!-- CONTACT SECTION -->
-<main>
-    <section_one>
-        <div>
-        <form name="contact" netlify>
+
+<main>    
+    <section class="form">
+        <form name="contact" method="POST" data-netlify="true">
             <p>
-              <label>Name <input type="text" name="name" /></label>
+            <label><input type="text" placeholder="Fullt navn" name="name"/></label>
             </p>
             <p>
-              <label>Email <input type="email" name="email" /></label>
+            <label><input type="text" placeholder="Emne" name="subject"/></label>
             </p>
             <p>
-              <button type="submit">Send</button>
+            <label><input type="email" placeholder="Email" name="email"/></label>
             </p>
-          </form>
-        </div>
-    </section_one>
+            <p>
+            <label><textarea name="message" placeholder="Melding..."></textarea></label>
+            </p>
+            <p>
+            <button type="submit">Send melding</button>
+            </p>
+        </form>
+    </section>
 </main>
 </body>
 </html>

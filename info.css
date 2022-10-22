@@ -143,45 +143,42 @@ nav > a > .hamburger_menu  {
     margin-top: 10vh;
     width: 100%;
     height: 60vh;
-    background-color: #cfcfcf;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    column-gap: 10vw;
     border-radius: 8px;
 }
 .section_one > .column_img > img {
-    height: 100%;
-    border-radius: 0px 8px 8px 0px;
+    height: 60vh;
+    border-radius: 60px 0px 0px 0px;
 }
 .section_one > .column_text {
     align-items: center;
     justify-content: center;
-    background-color: #1E1E1E;
-    padding: 10vh;
     width: 100%;
     border-radius: 8px 0px 0px 8px;
     font-family: 'Albert Sans';
-    font-size: 16px;
-    color: white;
-}
-.section_one > .column_text > div {
+    font-size: 18px;
+    color: #1E1E1E;
 }
 .section_one > .column_text > h1 {
     font-family: 'Gopher';
     font-size: 26px;
-    font-weight: 400;
+    font-weight: 300;
     margin-bottom: 20px;
 }
 .section_one > .column_text > .bottom {
     display: flex;
     flex-direction: row;
     column-gap: 5vw;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .section_one > .column_text > .bottom > div > p {
     font-family: 'Albert Sans';
-    font-size: 16px;
-    color: white;
+    font-size: 18px;
+    color: #1E1E1E;
 }
 
 /*
