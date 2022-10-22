@@ -14,6 +14,20 @@ main {
     padding-inline: 10vw;
     padding-block: 5vh;
 }
+main {
+    transition-delay: 500ms;
+}
+main { animation: fadeIn 3s; }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+main {
+    padding-inline: 10vw;
+    padding-block: 5vh;
+}
+
 button {
     display: flex;
     flex-direction: row;
@@ -31,6 +45,47 @@ button {
     border-radius: 8px;
     cursor: pointer;
     transition: 300ms ease-in-out;
+}
+button > p {
+    padding-right: 5px;
+}
+button > .white {
+    display: none;
+}
+button:hover {
+    background-color: #1E1E1E;
+    color: #EAEAEA;
+    filter: 200ms ease-in-out;
+}
+button:active {
+    background-color: #1E1E1E;
+    color: #EAEAEA;
+}
+button:hover > .black{
+    display: none;
+}
+button:hover > .black {
+    display: none;
+}
+button:hover > .white {
+    display: inline;
+}
+.subtitle {
+    font-family: 'Albert Sans';
+    font-weight: 500;
+    font-size: 16px;
+    color: #1E1E1E;
+    opacity: 50%;
+    line-height: 25px;
+}
+.undertitle {
+    font-size: 20px;
+    color: #1E1E1E;
+    line-height: 30px;
+}
+a {
+    text-decoration: none;
+    color: #1E1E1E;
 }
 /* NAV */
 
@@ -91,3 +146,25 @@ nav > a > .hamburger_menu  {
 
 /* CONTACT SECTION */
 
+.form {
+    background-color: none;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 10vh;
+}
+
+input,
+select,
+textarea {
+  font-family: 'Albert Sans';
+  font-size: 18px;
+  color: #1E1E1E;
+  opacity: 50%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: solid #1E1E1E 0.5px;
+  margin-bottom: 1vh;
+  width: 30vw;
+  height: 4vh;
+}
