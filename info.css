@@ -247,6 +247,56 @@ main > .intro_hero {
     padding-block: 5vh;
     padding-inline: 5vw;
 }
+.experience > .title > h1{
+    min-width: 15em;
+}
+.experience {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3em;
+    align-items: flex-start;
+    justify-content: left;
+    padding-block: 5em;
+    font-family: 'Albert Sans';
+}
+.experience > .title > h1{
+    font-size: 20px;
+    justify-content: flex-start;
+    width: auto;
+    font-family: 'Gopher';
+    color: #1E1E1E;
+    font-weight: 400;
+}
+.experiences {
+    display: flex;
+    flex-direction: column;
+    justify-items: right;
+    row-gap: 5em;
+    text-align: start;
+}
+.experiences > .column {
+    line-height: 30px;
+}
+.experiences> .column > h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #1E1E1E;
+    line-height:34px;
+}
+.experiences > .column > h3 {
+    font-size: 18px;
+    font-weight: 300;
+    color: #1E1E1E;
+    opacity: 50%;
+    line-height:34px;
+}
+.experiences > .column > h4 {
+    font-size: 18px;
+    font-weight: 300;
+    color: #1E1E1E;
+    opacity: 50%;
+    line-height:34px;
+}
 }
 @media (max-width:960px) {
 
