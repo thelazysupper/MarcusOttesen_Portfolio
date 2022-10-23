@@ -142,27 +142,34 @@ nav > a > .hamburger_menu  {
 .section_one {
     margin-top: 10vh;
     width: 100%;
-    height: 60vh;
+    height: fit-content;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     column-gap: 10vw;
     border-radius: 8px;
+    padding-bottom: 15vh;
+    padding-top: 5vh;
 }
 .section_one > .column_img > img {
     height: 40vh;
     border-radius: 60px 0px 0px 0px;
-    padding-block: 10vh;
+    border-radius: 100%;
+    margin-bottom: 3vh;
 }
 .section_one > .column_text {
     align-items: center;
     justify-content: center;
-    width: 100%;
-    border-radius: 8px 0px 0px 8px;
+    text-align: center;
+    width: 70%;
     font-family: 'Albert Sans';
     font-size: 18px;
     color: #1E1E1E;
+}
+.section_one > .column_text > p {
+    font-size: 18px;
+    font-weight: 300;
 }
 .section_one > .column_text > h1 {
     font-family: 'Gopher';
